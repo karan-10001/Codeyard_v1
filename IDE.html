@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>IDE</title>
+	
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	
+	<style>
+		body{
+		padding:10% 3% 10% 3%;
+		text-align:center;
+		}
+		img{
+			height:140px;
+				width:140px;
+		}
+		h1{
+		color: #1bdeee;
+		font-size: 300%;
+		margin-top: 5px;
+		}
+		h3{
+		   font-size: 200%;
+		   }
+		.mode {
+			margin-top: 10px;
+			float:right;
+		}
+		.change {
+			cursor: pointer;
+			border: 1px solid #555;
+			border-radius: 10%;
+			width: 20px;
+			text-align: center;
+			padding: 2px;
+			margin-left: 8px;
+			margin-top: 10px;
+		}
+		.dark{
+			background-color: #222;
+			color: #e6e6e6;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mode">
+		Dark mode:			
+		<span class="change">On</span>
+	</div>
+	
+	<div>
+		<h1>Welcome to codeyard compiler</h1>
+		
+        <p><i></i></p>
+
+		<h3>Happy Coding</h3>
+		
+		
+         <p>  
+			
+		</p>
+
+	</div>
+	<iframe
+      frameBorder="0"
+      height="450px"  
+      src="https://onecompiler.com/embed/python" 
+      width="100%"
+    >
+	</iframe>
+    
+	
+	<script>
+		$( ".change" ).on("click", function() {
+			if( $( "body" ).hasClass( "dark" )) {
+				$( "body" ).removeClass( "dark" );
+				$( ".change" ).text( "OFF" );
+			} else {
+				$( "body" ).addClass( "dark" );
+				$( ".change" ).text( "On" );
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/snippet_css.css">
+</head>
+
+<body>
+
+    <h1 style="font-size:14px;margin-bottom:5px;"><h1  style="text-align:center;">Browse C++ Code Snippet</h1> </h1>
+    <div class="pro">
+    <a href="#googlegoogle"> <h2>C++ hello world</h2></a>
+   
+    <a href="#googlegoogl"><h2>how to sort in descending order in c++</h2> </a>
+  
+    <a href="#googlegoog"><h2>sum of n natural numbers</h2> </a>
+    
+    <a href="#googlegoo"><h2>max and min function in c++</h2></a>
+
+    <a href="#googlego"><h2>remove space in string c++</h2></a>
+
+    <a href="#googleg"><h2>C++ programming code to remove all characters from string except alphabet</h2></a>
+
+    <a href="#google"><h2>C++ Swap Function </h2></a>
+
+    <a href="#googl"><h2>Max element in an array with the index in c++</h2></a>
+
+    <a href="#goog"><h2>find largest number in vector c++</h2></a>
+
+    <a href="#goo"><h2>prime factorisation of a number in c++ </h2></a>
+</div>
+    
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+    <div id="googlegoogl"><h3>~~~How to sort in descending order in C++</h3>
+        <br>
+        int arr[10];
+        <br>
+int length = sizeof(arr)/sizeof(arr[0]); 
+<br>
+sort(arr, arr+length, greater<int>());
+    <br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+    <div id="googlegoog"><h3>~~~sum of n natural numbers</h3>
+        <br>
+        #include <bits/stdc++.h>
+        <br>
+using namespace std;
+<br>
+int main()<br>
+{<br>
+	int n;<br>
+	cin>>n; //Take Input<br>
+	
+  	int sum = n*(n+1)/2;    //Calculate Sum<br>
+  	
+	cout<<sum; <br>		//Print Sum 
+  
+	return 0;<br>
+}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="googlegoo"><h3>-max and min function in c++</h3>
+        <br>
+#include<iostream>
+    <br>
+#include<algorithm>
+    <br>
+using namespace std;
+<br>
+int main()
+<br>
+{
+    <br>
+    // Comparing ASCII values of a and b
+<br>
+    cout << std::max('a','b') << "\n";
+<br>
+  
+    // Returns the first one if both the numbers
+<br>
+    // are same
+<br>
+    cout << std::max(7,7);
+<br>
+  
+return 0;
+<br>
+}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="googlego"><h3>-print remove space in string c++</h3>
+        <br>
+        string removeSpaces(string str)<br>
+{<br>
+    stringstream s(str);<br>
+    string temp;<br>
+    str = "";<br>
+    while (getline(s, temp, ' '))<br> {<br>
+        str = str + temp;<br>
+    }<br>
+    return str;<br>
+}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="googleg"><h3>-C++ programming code to remove all characters from string except alphabet </h3>
+        <br>
+        #include < bits/stdc++.h ><br>
+using namespace std;<br>
+// function to remove characters and<br>
+// print new string<br>
+void removeSpecialCharacter(string s)<br> {<br>
+    for (int i = 0; i < s.size(); i++)<br> {<br>
+        // Finding the character whose<br>
+        // ASCII value fall under this<br>
+        // range<br>
+        if (s[i] < 'A' || s[i] > 'Z' && s[i] < 'a' || s[i] > 'z')<br> {<br>
+            // erase function to erase<br>
+            // the character<br>
+            s.erase(i, 1);<br>
+            i--;<br>
+        }<br>
+    }<br>
+    cout << s;<br>
+}<br>
+// driver code<br>
+int main()<br> {<br>
+    string s = "P*re;p..ins't^a?";<br>
+    removeSpecialCharacter(s);<br>
+    return 0;<br>
+}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="google"><h3>-C++ Swap Function </h3>
+        <br>
+        int a, b;<br>
+
+        cout << "Input first number: ";<br>
+        cin >> a;<br>
+        cout << "Input second number: ";<br>
+        cin >> b;<br>
+    
+        swap (a, b);<br>
+    
+        cout << "After swapping the first number: " << a << endl;<br>
+        cout << "After swapping the second number: " << b << endl;
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="googl"><h3>~~~Max element in an array with the index in c++</h3>
+        <br>
+        int main(int argc, char** argv)<br> {<br>
+            int A[4] = {0, 2, 3, 1};<br>
+            const int N = sizeof(A) / sizeof(int);<br>
+          
+            cout << "Index of max element: "<br>
+                 << distance(A, max_element(A, A + N))<br>
+                 << endl;<br>
+          
+            return 0;<br>
+          }
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="goog"><h3>~~~find largest number in vector c++ </h3>
+        <br>
+        #include <algorithm> // max_element<br>
+            #include <vector> <br>
+            #include <iostream> // cout <br>
+            using namespace std;<br>
+            int main()<br>{<br>
+              vector<int> v1{ 10, 20, 30, 40, 50, 25, 15 };<br>
+              cout << *max_element(v1.begin(), v1.end());<br>
+            }<br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="goo"><h3>~~~prime factorisation of a number in c++ </h3>
+        <br>
+        // Function that returns a vector containing all the prime factors of n (25 --> 5, 5)<br>
+vector<long long> prime_factorisation(long long n)<br>
+{<br>
+    //spf is smallest prime factor<br>
+    map<long long, long long> spf;<br>
+    vector<long long> ans(0);<br>
+    for(long long i = 2; i <= n; i++) spf[i] = i;<br>
+
+    for (long long i = 2; i <= n; i++)<br>
+        if (spf[i] == i)<br>
+            for (long long j = i * i; j <= n; j += i)<br>
+                if (spf[j] == j)<br>
+                    spf[j] = i;<br>
+
+    while (n != 1)<br>
+    {<br>
+        ans.push_back(spf[n]);<br>
+        n /= spf[n];<br>
+    }<br>
+    return ans;<br>
+}
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+<div id="googlegoogle">
+    <h3>~ C++ Hello World</h3>
+    #include<iostreme>
+        <br>
+        using namespace std;
+        <br>
+        int main()
+        <br>
+        {
+            <br>
+          cout<<"Hello World!";
+          <br>
+          return 0;
+          <br>
+        }
+</div>
+</body>
+</html>
